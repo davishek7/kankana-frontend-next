@@ -43,6 +43,8 @@ function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
                   src={image.url}
                   alt="Best bridal makeup artist in mejia, durgapur, andal, barjora, raniganj"
                   className="img-fluid rounded shadow-sm"
+                  width={500}
+                  height={500}
                 />
               </div>
             ))}
@@ -60,6 +62,8 @@ function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
                 src={image.url}
                 alt="Best bridal makeup artist in Bankura, Asansol, Illambazar"
                 className="img-fluid rounded shadow-sm"
+                width={500}
+                height={500}
               />
             </div>
           ))}

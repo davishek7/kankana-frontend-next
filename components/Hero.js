@@ -53,6 +53,8 @@ function Hero() {
                 src={data.url}
                 alt="Kankana's Makeover, best makeup artist in mejia, barjora, durgapur"
                 className="img-fluid rounded shadow"
+                  width={500}   // required
+                  height={500} 
               />
             ) : (
               <p>Loading...</p>
