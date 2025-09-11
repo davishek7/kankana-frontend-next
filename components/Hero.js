@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import useCachedFetch from "@/app/hooks/useCachedFetch";
 import { API_URL } from "@/app/constants/api.constant";
 
@@ -48,7 +49,7 @@ function Hero() {
           </div>
           <div className="col-md-6">
             {data ? (
-              <img
+              <Image
                 src={data.url}
                 alt="Kankana's Makeover, best makeup artist in mejia, barjora, durgapur"
                 className="img-fluid rounded shadow"

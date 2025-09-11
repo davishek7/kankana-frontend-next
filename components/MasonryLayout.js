@@ -3,6 +3,7 @@ import { useState } from "react";
 import { API_URL } from "@/app/constants/api.constant";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Masonry from "react-masonry-css";
+import Image from "next/image";
 
 function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
   const breakpointColumnsObj = {
@@ -38,7 +39,7 @@ function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
           >
             {images.map((image) => (
               <div key={image.id} className="mb-3">
-                <img
+                <Image
                   src={image.url}
                   alt="Best bridal makeup artist in mejia, durgapur, andal, barjora, raniganj"
                   className="img-fluid rounded shadow-sm"
@@ -55,7 +56,7 @@ function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
         >
           {images.map((image) => (
             <div key={image.id} className="mb-3">
-              <img
+              <Image
                 src={image.url}
                 alt="Best bridal makeup artist in Bankura, Asansol, Illambazar"
                 className="img-fluid rounded shadow-sm"
