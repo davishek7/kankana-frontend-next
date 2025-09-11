@@ -1,9 +1,14 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { API_URL } from "@/app/constants/api.constant";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Masonry from "react-masonry-css";
 
 function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
+  const breakpointColumnsObj = {
+    default: 5, // 5 columns on desktop
+    768: 4, // 4 columns on mobile/tablets
+  };
   const [images, setImages] = useState(initialRows);
   const [offset, setOffset] = useState(nextOffset);
 
@@ -26,18 +31,13 @@ function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
           hasMore={images.length < total}
           loader={<h6>Loading more images...</h6>}
         >
-          <div
-            className="masonry"
-            style={{
-              columnCount: 5,
-              columnGap: "1rem",
-            }}
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className="masonry-grid"
+            columnClassName="masonry-grid_column"
           >
             {images.map((image) => (
-              <div
-                key={image.id}
-                style={{ breakInside: "avoid", marginBottom: "1rem" }}
-              >
+              <div key={image.id} className="mb-3">
                 <img
                   src={image.url}
                   alt="Best bridal makeup artist in mejia, durgapur, andal, barjora, raniganj"
@@ -45,21 +45,16 @@ function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
                 />
               </div>
             ))}
-          </div>
+          </Masonry>
         </InfiniteScroll>
       ) : (
-        <div
-          className="masonry"
-          style={{
-            columnCount: 5,
-            columnGap: "1rem",
-          }}
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="masonry-grid"
+          columnClassName="masonry-grid_column"
         >
           {images.map((image) => (
-            <div
-              key={image.id}
-              style={{ breakInside: "avoid", marginBottom: "1rem" }}
-            >
+            <div key={image.id} className="mb-3">
               <img
                 src={image.url}
                 alt="Best bridal makeup artist in Bankura, Asansol, Illambazar"
@@ -67,7 +62,7 @@ function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
               />
             </div>
           ))}
-        </div>
+        </Masonry>
       )}
     </>
   );

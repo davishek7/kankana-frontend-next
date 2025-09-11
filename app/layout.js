@@ -2,6 +2,7 @@ import Script from "next/script";
 import { ToastContainer } from "react-toastify";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import "./globals.css"
 
 export const metadata = {
   title: "Best Bridal Makeup Artist in Bankura | Kankana's Makeover",
