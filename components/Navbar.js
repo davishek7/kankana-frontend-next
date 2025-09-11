@@ -20,7 +20,7 @@ function Navbar() {
               height={48}
             />
           </span>
-          <span className="fw-bold">Kankana's Makeover</span>
+          <span className="fw-bold">Kankana&apos;s Makeover</span>
         </Link>
         <button
           className="navbar-toggler"

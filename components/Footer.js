@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="py-4 bg-white border-top text-center text-muted small">
       <p className="mb-1">
-        <strong>Kankana's Makeover</strong> · Bridal Makeup Artist in Andal,
+        <strong>Kankana&apos;s Makeover</strong> · Bridal Makeup Artist in Andal,
         Mejia & Barjora
       </p>
       <p className="mb-1">📞 +91-8016127841 · 📍 Mejia, Bankura</p>
@@ -19,7 +19,7 @@ function Footer() {
         </a>
       </p>
       <p className="mb-1">
-        © {new Date().getFullYear()} Kankana's Makeover · Built with ❤️ by{" "}
+        © {new Date().getFullYear()} Kankana&apos;s Makeover · Built with ❤️ by{" "}
         <Link
           href="https://davishek7.github.io"
           className="text-decoration-none text-dark"

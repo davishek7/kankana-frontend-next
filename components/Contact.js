@@ -33,7 +33,7 @@ function Contact() {
           Book Your Bridal Makeover in Mejia, Barjora and Illambazar
         </h2>
         <p className="my-3">
-          Brides across Mejia, Barjora and Illambazar trust Kankana's Makeover
+          Brides across Mejia, Barjora and Illambazar trust Kankana&apos;s Makeover
           for radiant, skin-focused bridal makeovers. Fill out the form or
           message us on WhatsApp to book your slot.
         </p>

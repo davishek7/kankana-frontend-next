@@ -30,7 +30,7 @@ function Hero() {
             </h1>
             <p className="mt-3 text-muted">
               Looking for the best{" "}
-              <strong>bridal makeup artist in Bankura</strong>? Kankana's
+              <strong>bridal makeup artist in Bankura</strong>? Kankana&apos;s
               Makeover offers stunning{" "}
               <strong>wedding, reception, haldi and party makeovers</strong>{" "}
               across <strong>Bankura, Durgapur, and Asansol</strong>. From
@@ -50,7 +50,7 @@ function Hero() {
             {data ? (
               <img
                 src={data.url}
-                alt="That's Me"
+                alt="Kankana's Makeover, best makeup artist in mejia, barjora, durgapur"
                 className="img-fluid rounded shadow"
               />
             ) : (

@@ -40,7 +40,7 @@ function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
               >
                 <img
                   src={image.url}
-                  alt={`Work ${image.id}`}
+                  alt="Best bridal makeup artist in mejia, durgapur, andal, barjora, raniganj"
                   className="img-fluid rounded shadow-sm"
                 />
               </div>
@@ -62,7 +62,7 @@ function MasonryLayout({ initialRows, total, nextOffset, paginated = false }) {
             >
               <img
                 src={image.url}
-                alt={`Work ${image.id}`}
+                alt="Best bridal makeup artist in Bankura, Asansol, Illambazar"
                 className="img-fluid rounded shadow-sm"
               />
             </div>
