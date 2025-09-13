@@ -21,7 +21,7 @@ function Footer() {
       <p className="mb-1">
         © {new Date().getFullYear()} Kankana&apos;s Makeover · Built with ❤️ by{" "}
         <Link
-          href="https://davishek7.github.io"
+          href="https://avishekresume.netlify.app/"
           className="text-decoration-none text-dark"
           target="_blank"
           rel="noopener noreferrer"
