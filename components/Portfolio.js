@@ -19,6 +19,7 @@ function Portfolio() {
       <div className="text-center mt-4">
         <Link
           href="/works"
+          prefetch={false}
           className="btn btn-pink"
           style={{ backgroundColor: "#d63384", color: "white" }}
         >
